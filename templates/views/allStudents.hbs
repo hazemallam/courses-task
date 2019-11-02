@@ -1,0 +1,34 @@
+{{>header}}
+{{>nav}}
+
+
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">id</th>
+      <th scope="col">user name</th>
+    </tr>
+  </thead>
+
+  <tbody>
+      
+{{#each students}}
+
+    <tr>
+    <td>{{ @index}}</td>
+      <td>{{this.id}}</td>
+      <td>{{this.userName}}</td>
+      
+    </tr>
+
+
+{{/each}}
+
+  </tbody>
+</table>
+
+
+
+
+{{>footer}}

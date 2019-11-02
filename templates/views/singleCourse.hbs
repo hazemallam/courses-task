@@ -1,0 +1,30 @@
+{{>header}}
+{{>nav}}
+
+<section class="container">
+<h1 class="text-center">{{data.title}}</h1>
+
+<div class="row d-flex justify-content-center">
+
+<div class="card col-12 m-3" style="width: 18rem;">
+  <img src="/public/images/javascript.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{data.price}}</h5>
+    {{!-- <p class="card-text">{{data.description}}</p> --}}
+  </div>
+</div>
+
+
+</div>
+</section>
+
+
+<form  id="carform" class="m-5" >
+  <select name="carlist" form="carform" name="selected">
+  {{#each students}}
+  <option value="{{this.userName}}">{{this.userName}}</option>
+  {{/each}}
+  
+</select>
+</form>
+{{>footer}}

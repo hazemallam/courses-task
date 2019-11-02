@@ -1,0 +1,29 @@
+{{>header}}
+{{>nav}}
+
+
+
+
+
+<section class="container">
+<h1 class="text-center">All COURSER</h1>
+
+<div class="row d-flex justify-content-center">
+
+{{#each data}}
+<div class="card col-3 m-3" style="width: 18rem;">
+  <img src="/public/images/javascript.png"  alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{this.title}}</h5>
+    <p class="card-text">{{this.price}}</p>
+    <p class="card-text">{{this.content}}</p>
+    <a href="{{this.title}}" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+{{/each}}
+
+
+
+</div>
+</section>
+{{>footer}}
